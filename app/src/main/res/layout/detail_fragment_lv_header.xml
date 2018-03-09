@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_sitter_1_bg" />
+
+        <ImageView
+            android:id="@+id/profile_iv"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/profile_bg_iv"
+            android:layout_height="100dp"
+            android:layout_marginTop="-50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/person_sitter_1" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/profile_iv"
+            android:text="이종찬(29세)"
+            android:gravity="center"
+            android:textColor="@color/textcolor_strong"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/explain_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_below="@+id/name_tv"
+            android:lineSpacingExtra="2sp"
+            android:text="경력 5회, 1km 이내, 5000원/시간"
+            android:textColor="@color/textcolor_weak"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/introduce_tv"
+            android:layout_below="@+id/explain_tv"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="안녕하세요 반갑습니다."
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor_strong"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/contact_and_recommend_btn_container"
+            android:layout_below="@+id/introduce_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/contact_btn"
+                android:layout_width="wrap_content"
+                android:text="연락하기"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/recommend_btn"
+                android:layout_width="wrap_content"
+                android:text="추천서보기"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/contact_and_recommend_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/base_shadow_bottom" />
+
+    </RelativeLayout>
+</LinearLayout>

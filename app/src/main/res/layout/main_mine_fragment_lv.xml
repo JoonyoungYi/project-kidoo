@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/card_background"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_bg_iv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person_sitter_1_bg" />
+
+            <ImageView
+                android:id="@+id/profile_iv"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/profile_bg_iv"
+                android:layout_height="100dp"
+                android:layout_marginTop="-50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/person_sitter_1" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/profile_iv"
+                android:text="이종찬(29세)"
+                android:gravity="center"
+                android:textColor="@color/textcolor_strong"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/explain_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:layout_below="@+id/name_tv"
+                android:lineSpacingExtra="2sp"
+                android:text="경력 5회, 1km 이내, 5000원/시간"
+                android:textColor="@color/textcolor_weak"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_below="@+id/explain_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_centerInParent="true"
+                android:text="리뷰쓰기!" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/card_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/base_button_transparent" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
